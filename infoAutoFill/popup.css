@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  width: 256px;
+  margin: 0 1em;
+}
+
+li {
+  display: flex;
+  margin: 1em 0;
+  height: 2em;
+  width: 100%;
+}
+
+li span {
+  flex: 1;
+  text-align: center;
+  font-family: KaiTi;
+  line-height: 2em;
+  border: 1px solid #000;
+  border-right: 0;
+}
+
+#pwd:hover {
+  cursor: pointer;
+}
+
+li .pj-advanced-select-wrapper {
+  flex: 4;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+li button {
+  width: 100%;
+  font-family: KaiTi;
+  font-size: 1.2em;
+}
+
+li button:hover {
+  cursor: pointer;
+}
+
+/*---------------------Advanced Select---------------------*/
+
+/* #pj-advanced-select-wrapper {
+  
+} */
+
+.pj-advanced-select-container {
+  width: 100%;
+  height: 2em;
+  line-height: 2em;
+}
+
+.pj-advanced-select-container .main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.pj-advanced-select-container input {
+  flex: 5;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+  padding-left: 0.9em;
+
+  outline: none;
+  border: #000 1px solid;
+  border-right: 0;
+
+  width: 100%;
+}
+
+.pj-advanced-select-container span {
+  flex: 1;
+  border: 1px solid #000;
+  border-left: 0;
+}
+
+.pj-advanced-select-container span img {
+  width: 100%;
+  height: 100%;
+}
+
+.pj-advanced-select-container .options {
+  width: 100%;
+  /* height: 100%; */
+  max-height: 400%;
+  font-family: 'Times New Roman', Times, serif; 
+  overflow-y: scroll;
+
+  position: relative;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(255,255,255, 0.9);
+}
+
+.pj-advanced-select-container .options .option {
+  width: auto;
+  /* height: 100%; */
+  height: 2em;
+  padding-left: 1em;
+  margin: 0;
+
+  font-size: 1.2em;
+
+  display: flex;
+}
+
+.pj-advanced-select-container .options li:hover {
+  background-color: #c1c1c1;
+}
+
+.pj-advanced-select-container .options li .text {
+  flex: 13;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.pj-advanced-select-container .options li .image {
+  flex: 1;
+  min-width: 1em;
+  margin-right: 0.6em;
+}
+
+.pj-advanced-select-container .options li .image img {
+  height: 100%;
+  width: 100%; 
+}
+
+.pj-advanced-select-container .options li .image img:hover {
+   animation: rotation 0.5s;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.pj-hide {
+  display: none;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: rgba(0,0,0,0.06);
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.08);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.08);
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: rgba(0,0,0,0.12);
+  -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.08);
+}
+
+/*---------------------Advanced Select---------------------*/
+
