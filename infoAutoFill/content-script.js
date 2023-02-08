@@ -6,11 +6,16 @@ chrome.runtime.onMessage.addListener((params, sender, sendResponse) => {
 })
 
 function fill(info, map) {
+  let event = document.createEvent('HTMLEvents');
+  event.initEvent("input", true, true);
+  event.eventType = 'message';
+
   const inputs = document.getElementsByTagName("input");
   for(let i = 0; i < inputs.length; ++i) {
     for(let key in info) {
       if(check(key, inputs[i], map)) {
           inputs[i].value = info[key];
+          inputs[i].dispatchEvent(event);
           break;
         }
     }
